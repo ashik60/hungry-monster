@@ -53,7 +53,7 @@ const displayIngredients = (food) => {
   mealName.innerHTML = food.meals[0].strMeal;
   ingredientList.innerHTML = ""; //Clear list if already populated
 
-  for (let i = 1; i < 10; i++) {
+  for (let i = 1; i <= 20; i++) {
     const ingredientItem = food.meals[0][`strIngredient${i}`];
     const ingredientAmount = food.meals[0][`strMeasure${i}`];
     if (ingredientItem) {
