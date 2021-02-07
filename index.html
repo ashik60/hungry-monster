@@ -18,29 +18,29 @@
 
   <body>
     <!-- Search Area -->
-    <div class="search">
+    <section class="center">
       <div class="input-group mb-3">
         <input type="text" class="form-control" id="foodInput" placeholder="Search for a food..." />
         <span class="input-group-btn">
           <button class="btn btn-success" onclick="searchMeal()" type="button">Search</button>
         </span>
       </div>
-    </div>
+    </section>
 
     <!-- Ingredients Area -->
-    <div class="row" id="ingredients">
+    <section class="row center" id="ingredients">
       <div class="col justify-content-center">
-        <img id="mealImage" width="350px" src="" alt="" />
+        <img id="mealImage" width="550px" height="300px" class="rounded" src="" alt="" />
         <h3 id="mealName"></h3>
         <h6>Ingredients</h6>
         <ul id="ingredientList"></ul>
       </div>
-    </div>
+    </section>
 
     <!-- Food List Area -->
-    <div class="container mt-5">
+    <section class="container mt-5">
       <div class="d-flex justify-content-center flex-wrap" id="foodListDiv"></div>
-    </div>
+    </section>
 
     <script src="./script.js"></script>
   </body>
