@@ -1,7 +1,7 @@
 // Handle search
 const searchMeal = () => {
   const foodInput = document.getElementById("foodInput").value;
-  const api = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${foodInput}`;
+  const api = `https://www.themealdb.com/api/json/v1/1/search.php?s=${foodInput}`;
   fetch(api)
     .then((res) => res.json())
     .then((data) => displayMeals(data));
