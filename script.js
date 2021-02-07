@@ -60,7 +60,6 @@ const displayIngredients = (food) => {
       const li = document.createElement("li");
       li.innerHTML = `${ingredientAmount} ${ingredientItem}`;
       ingredientList.appendChild(li);
-      console.log(ingredientItem);
     }
   }
 };
